@@ -12,14 +12,18 @@ Plug 'ErichDonGubler/vim-file-browser-integration'
 
 ## Usage
 
-For plugin/library writers, several useful functions are provided out of the box:
-* `file_browser_integration#OpenFile`: opens a filepath, similar to a double-click in your file browser application.
-* `file_browser_integration#SelectFile`: opens your file browser to the location of the filepath given, with the file itself selected.
+Quick demo GIF:
+
+![](demo.gif)
 
 End-users of this particular plugin will probably be interested in these convenience `:command`s:
 * `:SelectCurrentFile`: shows the current buffer in your file browser
 * `:OpenCWD`: shows the current working directory in your file browser
 * `:OpenCurrentBuffer`: opens the current buffer using your file browser
+
+For plugin/library writers, several useful functions are provided out of the box:
+* `file_browser_integration#OpenFile`: opens a filepath, similar to a double-click in your file browser application.
+* `file_browser_integration#SelectFile`: opens your file browser to the location of the filepath given, with the file itself selected.
 
 No bindings to these commands are provided by default. I'd recommend something like:
 
