@@ -51,7 +51,7 @@ function! file_browser_integration#get_default_commands()
 		if has('mac')
 			let l:commands.open.command = 'open'
 			let l:commands.select.command = 'open -R'
-		elseif exists('nautilus')
+		elseif executable('nautilus')
 			let l:commands.select.command = 'nautilus'
 			let l:commands.select.flags = 'nautilus --select'
 		endif
