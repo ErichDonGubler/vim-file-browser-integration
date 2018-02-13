@@ -57,7 +57,7 @@ function! file_browser_integration#get_default_commands()
 		endif
 	else
 		let l:commands.open.command = 'explorer'
-		let l:commands.select.command = 'explorer //select,'
+		let l:commands.select.command = 'explorer /select,'
 	endif
 
 	return l:commands
